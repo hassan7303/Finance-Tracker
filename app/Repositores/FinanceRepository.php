@@ -4,8 +4,7 @@
 namespace App\Repositories;
 
 use App\Models\Finance;
-
-class FinanceRepository 
+class FinanceRepository implements FinanceRepositoryInterface
 {
     
     public $finance;
@@ -13,23 +12,19 @@ class FinanceRepository
     {
         $this->finance = $finance;
     }
-    public function all()
+    public function getFinance()
     {
         return $this->finance->all();
     }
-    public function find($id)
-    {
-        return $this->finance->find($id);
-    }
-    public function create($data)
+    public function createFinance($data)
     {
         return $this->finance->create($data);
     }
-    public function update($id, $data)
+    public function updateFinance($id, $data)
     {
         return $this->finance->update($id, $data);
     }
-    public function delete($id)
+    public function deleteFinance($id)
     {
         return $this->finance->destroy($id);
     }
