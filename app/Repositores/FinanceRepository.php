@@ -1,8 +1,7 @@
 <?php
 
-
 namespace App\Repositories;
-
+use App\Repositories\FinanceRepositoryInterface;
 use App\Models\Finance;
 class FinanceRepository implements FinanceRepositoryInterface
 {
