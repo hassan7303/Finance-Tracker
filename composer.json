@@ -22,9 +22,11 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/",
-            "App\\Repositores\\": "app/Repositores/"
-        }
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Repositores/FinanceRepository.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
