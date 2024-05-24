@@ -14,23 +14,23 @@ class usersRepository
         dd(2224);
         $this->users = $users;
     }
-    public function all()
+    public function allUsers()
     {
         return $this->users->all();
     }
-    public function find($id)
+    public function findUser($id)
     {
         return $this->users->find($id);
     }
-    public function create($data)
+    public function createUser($data)
     {
         return $this->users->create($data);
     }
-    public function update($id, $data)
+    public function updateUser($id, $data)
     {
         return $this->users->update($id, $data);
     }
-    public function delete($id)
+    public function deleteUser($id)
     {
         return $this->users->destroy($id);
     }
