@@ -13,10 +13,11 @@ class FinanceTrackerController extends Controller
     {
         $this->financeRepository = $financeRepository;
     }
-
+    //از متد ها استفاده کن
+    
     public function show(Request $request)
     {
-       return $this->financeRepository;
+       return $this->financeRepository->getFinance();
     }
     public function create(Request $request)
     {
