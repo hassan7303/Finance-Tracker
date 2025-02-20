@@ -1,0 +1,17 @@
+{
+    "name": "root/finance-tracker-backend",
+    "description": "A simple backend for managing finance data.",
+    "autoload": {
+        "psr-4": {
+            "Root\\FinanceTrackerBackend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HassanAliAskari"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
